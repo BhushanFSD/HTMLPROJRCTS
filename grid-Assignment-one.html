@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid assignment one</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color:rgb(243, 238, 238);
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        /*Box one css*/
+        .box-one {
+            width: 100%;
+            height: 60px;
+            background-color: green;
+            grid-column: 1/span 3;
+            text-align: center;
+            padding-top: 25px;
+            font-size: 40px;
+            color: white;
+        }
+
+        /*Box two css*/
+        .box-two {
+            width: 100%;
+            height: 430px;
+            background-color: white;
+            grid-column: 1/span 2;
+            border-radius: 20px;
+            padding-top: 30px;
+            
+        }
+
+        /*Box three css*/
+        .box-three {
+            width: 100%;
+            height: 430px;
+            background-color: white;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-top: 30px;
+        }
+
+        /*Box four css*/
+        .box-four {
+            width: 100%;
+            height: 25px;
+            background-color: rgb(85, 78, 78);
+            grid-column: 1/span 3;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Main container-->
+    <div class="main-container">
+
+        <!--Box one-->
+        <div class="box-one">Breaking News</div>
+
+        <!--Box two-->
+        <div class="box-two">
+            <h1>Major Event Shakes the World </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur addipiscing elit. Sed do eiusmod tempor incididunt ut
+                 <br> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerclitation ullamco</br>
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in valuptate velit esse cillum dolore eu fugiat nulla<br>
+                pariatur.Excepteur sint occaecat non providatat non provident,sum in culpa qui official deserunt </br>
+            mollit anim id est laborum.</p>
+        </div>
+
+        <!--Box three-->
+        <div class="box-three">
+            <h3>Related News</h3>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </div>
+        
+        <!--Box four-->
+        <div class="box-four">ⓒ 2023 News Company. All rights reserved.</div>
+
+    </div>
+</body>
+
+</html>
