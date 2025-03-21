@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid assignment one</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color:rgb(243, 238, 238);
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            
+            
+
+        }
+
+        /*Box one css*/
+        .box-one {
+            width: 100%;
+            height: 60%;
+            background-color: green;
+            grid-column: 1/span 3;
+            text-align: center;
+            padding-top: 25px;
+            font-size: 40px;
+            color: white;
+             
+        }
+
+        /*Box two css*/
+        .box-two {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            grid-column: 1/span 2;
+            border-radius: 20px;
+        
+            
+        }
+        .p{
+            margin-left: 30px;
+            margin-right: 40px;
+        }
+
+        /*Box three css*/
+        .box-three {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 10px;
+            padding-left: 20px;
+            
+        }
+
+        /*Box four css*/
+        .box-four {
+            width: 100%;
+            height: 25px;
+            background-color: rgb(85, 78, 78);
+            grid-column: 1/span 3;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!--Main container-->
+    <div class="main-container">
+
+        <!--Box one-->
+        <div class="box-one">Breaking News</div>
+
+        <!--Box two-->
+        <div class="box-two">
+            <h1>The climate crisis is impacting those working to solve it</h1>
+            <img src="https://idronline.org/wp-content/uploads/2025/03/Person-walking.webp" width="350px">
+            <p>A 2024 report recorded 733 heatstroke deaths in India and more than 40,000 cases across 17 states. From April to June 2024, India experienced its longest heatwave in recorded history, with temperatures reaching 50°C in some areas. Despite some welcome respite during July’s monsoon rains, ‘extreme rain days’ have increased in India since the mid-twentieth century, prompting red alerts from the Indian Meteorological Department (IMD).</p>
+            <p>For those working outdoors, especially in cities, these climate extremes create dangerous and unpredictable conditions. The International Labour Organization (ILO) has identified six key impacts of climate change on workers: excessive heat, solar ultraviolet (UV) radiation, extreme weather events, workplace air pollution, vector-borne diseases, and agrochemicals. While these impacts are most pronounced among informal workers engaged in long hours of outdoor labour, nonprofit fieldworkers face similar risks. They often spend extended hours outside without adequate provisions, navigating hazardous sites for relief work.</p>
+        </div>
+
+        <!--Box three-->
+        <div class="box-three">
+            <h3>Related News</h3>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </div>
+        
+        <!--Box four-->
+        <div class="box-four">ⓒ 2023 News Company. All rights reserved.</div>
+
+    </div>
+</body>
+
+</html>
